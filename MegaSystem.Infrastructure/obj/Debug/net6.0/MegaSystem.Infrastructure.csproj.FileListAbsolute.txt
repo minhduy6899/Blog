@@ -1,0 +1,17 @@
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Infrastructure.deps.json
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Infrastructure.runtimeconfig.json
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Infrastructure.dll
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Infrastructure.pdb
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Core.dll
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\bin\Debug\net6.0\MegaSystem.Core.pdb
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.csproj.AssemblyReference.cache
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.AssemblyInfoInputs.cache
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.AssemblyInfo.cs
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.csproj.CopyComplete
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.dll
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\refint\MegaSystem.Infrastructure.dll
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.pdb
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\MegaSystem.Infrastructure.genruntimeconfig.cache
+D:\Dotnet8\MegaSystem\MegaSystem.Infrastructure\obj\Debug\net6.0\ref\MegaSystem.Infrastructure.dll
