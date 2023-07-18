@@ -14,5 +14,7 @@ namespace MegaSystem.Core.DTO
         public int Id { get; set; }
         [Required]
         public string? BlogName { get; set; }
+
+        public int UserId { get; set; }
     }
 }

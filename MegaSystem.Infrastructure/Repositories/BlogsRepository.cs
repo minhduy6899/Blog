@@ -12,6 +12,7 @@ namespace MegaSystem.Infrastructure.Repositories
 {
     public class BlogsRepository : IBlogsRepository
     {
+
         private readonly ApplicationDbContext _context;
         public BlogsRepository(ApplicationDbContext context)
         {
@@ -33,7 +34,7 @@ namespace MegaSystem.Infrastructure.Repositories
 
         public async Task<List<Blog>> GetAllBlog()
         {
-            return await _context.Blogs.Include(blog=> blog.Posts).ToListAsync();
+            return await _context.Blogs.ToListAsync();
         }
 
         public async Task<Blog?> GetBlogByBlogName(string blogName)
@@ -54,6 +55,7 @@ namespace MegaSystem.Infrastructure.Repositories
             {
                 return blog;
             }
+            matchingBlog.UserId = blog.UserId;
             matchingBlog.BlogName  = blog.BlogName;
             await _context.SaveChangesAsync();
 

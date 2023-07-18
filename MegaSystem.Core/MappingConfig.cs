@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MegaSystem.Core.Domain.Entities;
+using MegaSystem.Core.Domain.RepositoryContracts;
 using MegaSystem.Core.DTO;
 using System;
 using System.Collections.Generic;
@@ -16,17 +17,13 @@ namespace MegaSystem.Core
             //Blog
             CreateMap<Blog, BlogAddRequest>().ReverseMap();
             CreateMap<Blog, BlogUpdateRequest>().ReverseMap();
-            CreateMap<Blog, BlogResponse>()
-                .ForMember(dest => dest.Posts, opt => opt
-                .MapFrom(src => src.Posts.Select(p => p.PostName)));
-                
-                
-
+            CreateMap<Blog, BlogResponse>();
             //Post
             CreateMap<Post, PostAddRequest>().ReverseMap();
             CreateMap<Post, PostUpdateRequest>().ReverseMap();
             CreateMap<Post, PostResponse>();
-
         }
+
     }
+
 }

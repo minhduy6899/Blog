@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using MegaSystem.Core.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MegaSystem.Core.Domain.RepositoryContracts;
+
 
 namespace MegaSystem.Core.DTO
 {
@@ -14,8 +11,18 @@ namespace MegaSystem.Core.DTO
 
         public string? BlogName { get; set; }
 
-        public ICollection<string>? Posts { get; set; }
+        public int UserId { get; set; }
+
+        public string? Blogger { get; set; }
+    }
+    public static class BlogExtensions
+    {
+        public static async Task<BlogResponse> ToBlogResponseBlogger(this BlogResponse blog, IUsersRepository _usersRepository)
+        {
+            User? user = await _usersRepository.GetUserById(blog.UserId);
+            blog.Blogger = user?.UserName;
+            return blog;
+        }
 
     }
-   
 }

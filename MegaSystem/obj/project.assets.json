@@ -2342,11 +2342,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dotnet8\\MegaSystem\\MegaSystem\\MegaSystem.csproj",
+      "projectUniqueName": "D:\\Dotnet8\\Blog\\MegaSystem\\MegaSystem.csproj",
       "projectName": "MegaSystem",
-      "projectPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem\\MegaSystem.csproj",
+      "projectPath": "D:\\Dotnet8\\Blog\\MegaSystem\\MegaSystem.csproj",
       "packagesPath": "C:\\Users\\Harri\\.nuget\\packages\\",
-      "outputPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem\\obj\\",
+      "outputPath": "D:\\Dotnet8\\Blog\\MegaSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2367,11 +2367,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dotnet8\\MegaSystem\\MegaSystem.Core\\MegaSystem.Core.csproj": {
-              "projectPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Core\\MegaSystem.Core.csproj"
+            "D:\\Dotnet8\\Blog\\MegaSystem.Core\\MegaSystem.Core.csproj": {
+              "projectPath": "D:\\Dotnet8\\Blog\\MegaSystem.Core\\MegaSystem.Core.csproj"
             },
-            "D:\\Dotnet8\\MegaSystem\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj": {
-              "projectPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj"
+            "D:\\Dotnet8\\Blog\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj": {
+              "projectPath": "D:\\Dotnet8\\Blog\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj"
             }
           }
         }

@@ -80,7 +80,7 @@ namespace MegaSystem.Core.Services
             serviceResponse.Data = posts.Select(temp =>
             {
                 var post = _mapper.Map<PostResponse>(temp);
-                post.Blog = temp.Blog.BlogName;
+                
                 return post;
             }).ToList();
             serviceResponse.IsSuccess = true;
@@ -104,7 +104,7 @@ namespace MegaSystem.Core.Services
 
             serviceResponse.IsSuccess = true;
             serviceResponse.Data = _mapper.Map<PostResponse>(blog);
-            serviceResponse.Data.Blog = blog.Blog.BlogName;
+           
             return serviceResponse;
         }
 
