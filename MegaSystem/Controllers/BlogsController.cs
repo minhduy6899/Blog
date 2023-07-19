@@ -22,7 +22,7 @@ namespace MegaSystem.Controllers
 
         // GET: api/<BlogsController>
         [HttpGet("GetAll")]
-        public async Task<ActionResult<ServiceResponse<BlogResponse>>> Get()
+        public async Task<ActionResult<ServiceResponse<List<BlogResponse>>>> Get()
         {
             return Ok(await _blogService.GetAllBlogs());
         }

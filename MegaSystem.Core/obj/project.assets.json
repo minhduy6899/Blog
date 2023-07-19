@@ -318,11 +318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Core\\MegaSystem.Core.csproj",
+      "projectUniqueName": "D:\\Dotnet8\\Blog\\MegaSystem.Core\\MegaSystem.Core.csproj",
       "projectName": "MegaSystem.Core",
-      "projectPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Core\\MegaSystem.Core.csproj",
+      "projectPath": "D:\\Dotnet8\\Blog\\MegaSystem.Core\\MegaSystem.Core.csproj",
       "packagesPath": "C:\\Users\\Harri\\.nuget\\packages\\",
-      "outputPath": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Core\\obj\\",
+      "outputPath": "D:\\Dotnet8\\Blog\\MegaSystem.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

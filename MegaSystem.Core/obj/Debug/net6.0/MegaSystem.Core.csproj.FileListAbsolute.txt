@@ -10,3 +10,15 @@ D:\Dotnet8\MegaSystem\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.dll
 D:\Dotnet8\MegaSystem\MegaSystem.Core\obj\Debug\net6.0\refint\MegaSystem.Core.dll
 D:\Dotnet8\MegaSystem\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.pdb
 D:\Dotnet8\MegaSystem\MegaSystem.Core\obj\Debug\net6.0\ref\MegaSystem.Core.dll
+D:\Dotnet8\Blog\MegaSystem.Core\bin\Debug\net6.0\MegaSystem.Core.deps.json
+D:\Dotnet8\Blog\MegaSystem.Core\bin\Debug\net6.0\MegaSystem.Core.dll
+D:\Dotnet8\Blog\MegaSystem.Core\bin\Debug\net6.0\MegaSystem.Core.pdb
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.csproj.AssemblyReference.cache
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.AssemblyInfoInputs.cache
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.AssemblyInfo.cs
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.csproj.CoreCompileInputs.cache
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.dll
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\refint\MegaSystem.Core.dll
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\MegaSystem.Core.pdb
+D:\Dotnet8\Blog\MegaSystem.Core\obj\Debug\net6.0\ref\MegaSystem.Core.dll

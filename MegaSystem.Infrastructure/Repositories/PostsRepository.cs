@@ -30,12 +30,12 @@ namespace MegaSystem.Infrastructure.Repositories
 
         public async Task<List<Post>> GetAllPost()
         {
-            return await _context.Posts.Include("Blog").ToListAsync();
+            return await _context.Posts.ToListAsync();
         }
 
         public async Task<Post?> GetPostById(int id)
         {
-            return await _context.Posts.Include("Blog").FirstOrDefaultAsync(post => post.Id == id);
+            return await _context.Posts.FirstOrDefaultAsync(post => post.Id == id);
         }
 
         public async Task<Post?> UpdatePost(Post post)

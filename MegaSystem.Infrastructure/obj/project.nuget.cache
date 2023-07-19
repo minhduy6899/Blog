@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IMmZmjLo/08sDZVfgcyj4ns6xykGj3cbTuPapl9XegVZ+Vl32ctHK4fTG9Cxygf4gYwvMCy+Q4ZZc3i/g9xihg==",
+  "dgSpecHash": "uNdu3083FWfFh8/hrM6ocKEwdyQG9bv33eDMYJggaq3BmO7bpUHQmz45qhV9aCTcxtkTsU3joPaTr/1Z/ZgHqg==",
   "success": true,
-  "projectFilePath": "D:\\Dotnet8\\MegaSystem\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj",
+  "projectFilePath": "D:\\Dotnet8\\Blog\\MegaSystem.Infrastructure\\MegaSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Harri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Harri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

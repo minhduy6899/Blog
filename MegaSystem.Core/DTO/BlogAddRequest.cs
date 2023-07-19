@@ -11,5 +11,7 @@ namespace MegaSystem.Core.DTO
     {
         [Required(ErrorMessage = "Blog Name can't be blank")]
         public string? BlogName { get; set; }
+
+        public int UserId { get; set; }
     }
 }

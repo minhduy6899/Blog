@@ -14,9 +14,11 @@ namespace MegaSystem.Core.Services
     public class BlogsService : IBlogsService
     {
         private readonly IBlogsRepository _blogsRepository;
+        private readonly IUsersRepository _usersRepository;
         private readonly IMapper _mapper;
-        public BlogsService(IBlogsRepository blogsRepository, IMapper mapper)
+        public BlogsService(IBlogsRepository blogsRepository, IMapper mapper, IUsersRepository usersRepository)
         {
+            _usersRepository = usersRepository;
             _blogsRepository = blogsRepository;
             _mapper = mapper;
         }
@@ -46,19 +48,25 @@ namespace MegaSystem.Core.Services
             await _blogsRepository.AddBlog(blog);
 
             serviceResponse.IsSuccess = true;
-            serviceResponse.Data = _mapper.Map<BlogResponse>(blog);
-
+            serviceResponse.Data = await _mapper.Map<BlogResponse>(blog).ToBlogResponseBlogger( _usersRepository);
+            
             return serviceResponse;
         }
 
         
 
-        // Add all
+        // Get all
         public async Task<ServiceResponse<List<BlogResponse>>> GetAllBlogs()
         {
             List<Blog> blogs = await _blogsRepository.GetAllBlog();
             var serviceResponse = new ServiceResponse<List<BlogResponse>>();
-            serviceResponse.Data = blogs.Select(temp => _mapper.Map<BlogResponse>(temp)).ToList();
+            serviceResponse.Data = new List<BlogResponse>();
+            foreach (var blog in blogs)
+            {
+                BlogResponse blogResponse = _mapper.Map<BlogResponse>(blog);
+                await blogResponse.ToBlogResponseBlogger(_usersRepository);
+                serviceResponse.Data.Add(blogResponse);
+            }
             serviceResponse.IsSuccess = true;
             return serviceResponse;
         }
@@ -79,7 +87,7 @@ namespace MegaSystem.Core.Services
             };
           
             serviceResponse.IsSuccess = true;
-            serviceResponse.Data = _mapper.Map<BlogResponse>(blog);
+            serviceResponse.Data = await _mapper.Map<BlogResponse>(blog).ToBlogResponseBlogger(_usersRepository);
             return serviceResponse;
         }
 
@@ -97,13 +105,19 @@ namespace MegaSystem.Core.Services
                 serviceResponse.Message = new ArgumentException(nameof(blogUpdateRequest.BlogName)).Message;
                 return serviceResponse;
             }
+            if (await _usersRepository.GetUserById(blogUpdateRequest.UserId) == null)
+            {
+                serviceResponse.Message = $"Blogger with Id '{blogUpdateRequest.Id}' not found.";
+                return serviceResponse;
+            }
             if (await _blogsRepository.GetBlogById(blogUpdateRequest.Id) == null)
             {
                 serviceResponse.Message = $"Blog with Id '{blogUpdateRequest.Id}' not found.";
                 return serviceResponse;
             }
-            serviceResponse.Data = _mapper.Map<BlogResponse>
-                (await _blogsRepository.UpdateBlog(_mapper.Map<Blog>(blogUpdateRequest)));
+            
+            serviceResponse.Data = await _mapper.Map<BlogResponse>
+                (await _blogsRepository.UpdateBlog(_mapper.Map<Blog>(blogUpdateRequest))).ToBlogResponseBlogger(_usersRepository);
             serviceResponse.IsSuccess = true;
             return serviceResponse;
         }
